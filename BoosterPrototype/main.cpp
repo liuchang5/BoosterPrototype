@@ -1,10 +1,13 @@
 #include "LCMainWidget.h"
 #include <QApplication>
+#include "LCLog.h"
 
 int main(int argc, char *argv[])
 {
     bool bRetCode = false;
+    LCLogInit();
     QApplication a(argc, argv);
+
     LCMainWidget MainWidget;
 
     do

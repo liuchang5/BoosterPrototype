@@ -13,7 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    LCMainWidget.cpp
+    LCLog.cpp\
+    LCMainWidget.cpp \
+
 
 HEADERS  += \
-    LCMainWidget.h
+    LCMainWidget.h \
+    LCLog.h
+

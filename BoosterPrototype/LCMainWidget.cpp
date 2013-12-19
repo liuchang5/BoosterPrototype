@@ -3,6 +3,7 @@
 #include <QPalette>
 #include <QApplication>
 #include <QScreen>
+#include "LCLog.h"
 
 LCMainWidget::LCMainWidget(QWidget *parent)
     : QWidget(parent)
@@ -21,10 +22,13 @@ bool LCMainWidget::Init()
     do
     {
         bRetCode = _InitAppearance();
-        if (!bRetCode) break;
+        bRetCode = false;
+        LC_CHECK(bRetCode);
+        // if (!bRetCode) break;
 
 
-        bRetCode = _InitSignal();
+        //bRetCode = _InitSignal();
+
 
 
         bRetCode = true;
